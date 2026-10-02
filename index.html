@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MEDIOGRAPHER_PD| Photography Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= WELCOME SCREEN ================= -->
+
+    <div id="welcomeScreen" class="welcome-screen">
+
+        <div class="welcome-content">
+
+            <p class="small-title">LENS & LIGHT</p>
+
+            <h1>Welcome to<br><span>Our World</span></h1>
+
+            <p class="welcome-text">
+                Every photograph tells a story.<br>
+                Let's create yours.
+            </p>
+
+            <div class="name-box">
+                <input
+                    type="text"
+                    id="visitorName"
+                    placeholder="Enter your name"
+                    autocomplete="off"
+                >
+
+                <button onclick="enterWebsite()">
+                    ENTER
+                </button>
+            </div>
+
+            <p id="nameError" class="error-message"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MAIN WEBSITE ================= -->
+
+    <div id="mainWebsite" class="hidden">
+
+        <!-- NAVBAR -->
+
+        <header class="navbar">
+
+            <div class="logo">
+                MEDIOGRAPHER<span>_</span>PD
+            </div>
+
+            <nav id="navMenu">
+
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </header>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    PHOTOGRAPHY • FILMS • STORIES
+                </p>
+
+                <h1>
+                    Capturing<br>
+                    <span>Moments</span>
+                </h1>
+
+                <p id="personalGreeting">
+                    Welcome to our photography studio.
+                </p>
+
+                <a href="#portfolio" class="primary-btn">
+                    EXPLORE OUR WORK
+                </a>
+
+            </div>
+
+            <div class="scroll-text">
+                SCROLL TO EXPLORE ↓
+            </div>
+
+        </section>
+
+
+        <!-- ================= PORTFOLIO ================= -->
+
+        <section id="portfolio" class="portfolio section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    OUR BEST WORK
+                </p>
+
+                <h2>
+                    Stories Through<br>
+                    <span>Our Lens</span>
+                </h2>
+
+                <p>
+                    A collection of moments, emotions and memories
+                    captured with passion.
+                </p>
+
+            </div>
+
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" onclick="filterGallery('all', this)">
+                    All
+                </button>
+
+                <button class="filter-btn" onclick="filterGallery('wedding', this)">
+                    Weddings
+                </button>
+
+                <button class="filter-btn" onclick="filterGallery('portrait', this)">
+                    Portraits
+                </button>
+
+                <button class="filter-btn" onclick="filterGallery('events', this)">
+                    Events
+                </button>
+
+            </div>
+
+
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/DSC09962-01.JPG" alt="Maternity Photography">
+
+                      <div class="image-info">
+
+                          <span>Portrait</span>
+
+                          <h3>MATERNITY SHOOT </h3>
+
+                      </div>
+                      
+                    </div>
+
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/DSC09989-02.JPG" alt="Photography">
+                      <div class="image-info">
+                          <span>Portrait</span>
+                          <h3></h3>Mom & Dad 
+                      </div>
+                    </div>
+
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/059A0639 - 03.JPG" alt="Mom and Dad">
+                      <div class="image-info">
+                          <span>Portrait</span>
+                          <h3>Beautiful Moments</h3>
+                      </div>
+                    </div>
+
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/059A1249-04.JPG" alt="Portrait Photography">
+                      <div class="image-info">
+                          <span>Portrait</span>
+                          <h3>Beautiful Moments</h3>
+                      </div>
+                    </div>
+
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/404A6267-05.JPG" alt="Photography">
+                      <div class="image-info">
+                          <span>Portrait</span>
+                          <h3>Beautiful Moments</h3>
+                      </div>
+                    </div>
+
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/404A6281-06.JPG" alt="Photography">
+                      <div class="image-info">
+                          <span>Portrait</span>
+                          <h3>Beautiful Moments</h3>
+                      </div>
+                    </div>
+
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/DSC03034-07.JPG" alt="Photography">
+                      <div class="image-info">
+                          <span>Portrait</span>
+                          <h3>Beautiful Moments</h3>
+                      </div>
+                    </div>
+                <div class="gallery-item portrait">
+
+                      <img src="images/photos/DSC03198-08.JPG" alt="Photography">
+                      <div class="image-info">
+                          <span>Portrait</span>
+                          <h3>Beautiful Moments</h3>
+                      </div>
+                    </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about section">
+
+            <div class="about-image">
+
+                <img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=1000&q=85">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT US
+                </p>
+
+                <h2>
+                    We Don't Just<br>
+                    Take <span>Pictures.</span>
+                </h2>
+
+                <p>
+                    We capture emotions, stories and the little moments
+                    that make life unforgettable.
+                </p>
+
+                <p>
+                    Mediographer pd is a creative photography studio
+                    specializing in weddings, portraits, events and
+                    lifestyle photography.
+                </p>
+
+                <p>
+                    Our goal is simple — create photographs that make
+                    you feel something every time you look at them.
+                </p>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>50+</strong>
+                        <span>Happy Clients</span>
+                    </div>
+
+                    <div>
+                        <strong>100+</strong>
+                        <span>Stories Captured</span>
+                    </div>
+
+                    <div>
+                        <strong>2.5+</strong>
+                        <span>Years Experience</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section id="services" class="services section">
+
+            <div class="section-heading center">
+
+                <p class="section-label">
+                    WHAT WE DO
+                </p>
+
+                <h2>
+                    Our <span>Services</span>
+                </h2>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        01
+                    </div>
+
+                    <h3>Wedding Photography</h3>
+
+                    <p>
+                        From the first look to the final dance,
+                        we capture every emotional moment.
+                    </p>
+
+                    <a href="#contact">
+                        BOOK NOW →
+                    </a>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        02
+                    </div>
+
+                    <h3>Portrait Photography</h3>
+
+                    <p>
+                        Professional portraits that show your
+                        personality and individuality.
+                    </p>
+
+                    <a href="#contact">
+                        BOOK NOW →
+                    </a>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        03
+                    </div>
+
+                    <h3>Event Photography</h3>
+
+                    <p>
+                        Corporate events, birthdays, parties and
+                        special celebrations.
+                    </p>
+
+                    <a href="#contact">
+                        BOOK NOW →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUOTE ================= -->
+
+        <section class="quote-section">
+
+            <div>
+
+                <p>
+                    "Photography is the story I fail to put into words."
+                </p>
+
+                <span>
+                    — Destin Sparks
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact section">
+
+            <div class="contact-info">
+
+                <p class="section-label">
+                    LET'S CREATE
+                </p>
+
+                <h2>
+                    Let's Capture<br>
+                    Your <span>Story.</span>
+                </h2>
+
+                <p>
+                    Have a special moment coming up?
+                    Tell us about it and let's create something
+                    beautiful together.
+                </p>
+
+                <div class="contact-details">
+
+                    <div>
+                        <strong>Email</strong>
+                        <p>pranavdhulap809@gmail.com</p>
+                    </div>
+
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+91 90824 58649</p>
+                    </div>
+
+                    <div>
+                        <strong>Location</strong>
+                        <p>Mumbai, Maharashtra, India</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <div class="footer-logo">
+                MEDIOGRAPHER<span>_</span>PD
+            </div>
+
+            <p>
+                Capturing moments. Creating memories.
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/MEDIOGRAPHER_PD/"
+       target="_blank">
+        Instagram
+                <a href="https://wa.me/9082458649"
+       target="_blank">
+        WhatsApp
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Mediographer_pd. All Rights Reserved.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>1
