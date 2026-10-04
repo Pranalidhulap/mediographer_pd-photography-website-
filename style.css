@@ -330,7 +330,7 @@ select {
 ================================ */
 
 .section {
-    padding: 130px 7%;
+    padding: 130px 25%;
 }
 
 .section-heading {
@@ -525,7 +525,7 @@ gallery-item img {
     }
 
     .gallery-item {
-        aspect-ratio: 4 / 5;
+        aspect-ratio: 3/ 2;
     }
 
 }
