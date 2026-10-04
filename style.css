@@ -539,17 +539,21 @@ gallery-item img {
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 10%;
+    gap: 8%;
 
     align-items: center;
 
     background: #111;
+
+    padding: 130px 7%;
 }
 
-.about-image img {
-    height: 700px;
+.about-content {
+    max-width: 650px;
+}
 
-    object-fit: cover;
+.about-content h2 {
+    margin-left: 0;
 }
 
 .about-content > p:not(.section-label) {
@@ -558,6 +562,8 @@ gallery-item img {
     line-height: 1.9;
 
     margin-top: 25px;
+
+    max-width: 650px;
 }
 
 .stats {
@@ -589,7 +595,6 @@ gallery-item img {
 
     letter-spacing: 1px;
 }
-
 
 /* ================================
    SERVICES
